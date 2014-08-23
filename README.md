@@ -30,3 +30,9 @@ Questions, Comments
 ===================
 
 Email me: jameslaymusic@gmail.com
+
+
+What About Angular?
+===================
+
+Yeah, I'm not sure what to do about this yet, but ideally there should be a $scope.$apply() in there some where.  I'm open to ideas.

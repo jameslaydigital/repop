@@ -8,6 +8,7 @@
  */
 
 (function() {
+
   window._COOKIES = {
     get cookies () {
       var text = document.cookie;
@@ -41,6 +42,7 @@
       return [];
     },
   };
+
   function repop(e) {
     var inputs = document.querySelectorAll("input, select");
     var values = _COOKIES.repop;
@@ -52,6 +54,7 @@
       }
     }
   }
+
   function depop(e) {
     var inputs = document.querySelectorAll("input, select");
     var values = [];
@@ -64,6 +67,7 @@
     }
     document.cookie = "repop="+JSON.stringify(values);
   }
+
   window.addEventListener("load", repop);
   window.addEventListener("keydown", depop );
   window.addEventListener("click", depop );
